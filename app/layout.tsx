@@ -15,9 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Aaron's Portfolio",
-    description: "Aaron's Portfolio.",
+    title: {
+        default: "Home | Aaron's Portfolio",
+        template: "%s | Aaron's Portfolio",
+    },
+    description: "Aaron's Portfolio",
 };
+
+
+
 export default function RootLayout({children,}: Readonly<{
     children: React.ReactNode;}>) {
     return (

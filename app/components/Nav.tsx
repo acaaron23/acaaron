@@ -1,10 +1,11 @@
 import Link from "next/link";
 
 export default function Nav() {
-    const linkStyle = "p-5 font-bold text-black text-2xl hover:scale-[1.05] inline-block";
+    const linkStyle = "p-5 font-bold text-white text-2xl hover:scale-[1.05] inline-block";
     return (
         <nav className="p-2">
             <Link href={`/`} className={linkStyle}>Home</Link>
+            <Link href={`/education`} className={linkStyle}>Education</Link>
         </nav>
     )
 }
