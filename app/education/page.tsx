@@ -13,8 +13,8 @@ export default function Education(){
                         <Image
                             src="/BU.png"
                             alt="Boston University"
-                            width={128}
-                            height={128}
+                            width={164}
+                            height={164}
                             className="w-full md:w-1/3"
                         />
                         <div className="flex flex-col">
