@@ -42,8 +42,9 @@ function Typewriter() {
 
     return (
         <div className="flex justify-center items-center font-mono text-2xl">
-            <span>{displayedText}</span>
-            <span className="animate-blink ml-1">|</span>
+            <p className="animate-blink pr-4 text-green-500"> {'>'} </p>
+            <p>{displayedText}</p>
+            <p className="animate-blink font-xl text-green-500 ml-1">|</p>
         </div>
     );
 }

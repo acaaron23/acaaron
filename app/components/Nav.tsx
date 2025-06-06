@@ -6,6 +6,7 @@ export default function Nav() {
         <nav className="p-2">
             <Link href={`/`} className={linkStyle}>Home</Link>
             <Link href={`/education`} className={linkStyle}>Education</Link>
+            <Link href={'/employment'} className={linkStyle}>Employment</Link>
         </nav>
     )
 }
