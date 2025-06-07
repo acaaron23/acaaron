@@ -30,7 +30,7 @@ export default function About() {
                     {/* Socials */}
                     <div className="flex flex-col items-center gap-6">
                         <h1 className="text-2xl font-bold underline text-center">Let&#39;s Connect!</h1>
-                        <div className="flex flex-wrap justify-center items-center gap-8">
+                        <div className="flex flex-row flex-nowrap justify-center items-center gap-6">
                             <Link href="https://www.linkedin.com/in/acaaron/" target="_blank" rel="noopener noreferrer">
                                 <div className="w-32 h-32 rounded-full bg-white border-4 border-gray-200 overflow-hidden flex items-center justify-center">
                                     <Image
