@@ -9,7 +9,7 @@ export default function Header() {
     const [hamburger, setHamburger] = useState(false);
 
     return (
-        <header className="w-full bg-black px-4 py-3">
+        <header className="w-full bg-black px-4 py-1">
             <div className="flex justify-between items-center">
                 <Link
                     href={`/`}
