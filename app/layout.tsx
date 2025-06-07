@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{
     children: React.ReactNode;}>) {
     return (
-        <html lang = "en" className="h-full">
+        <html lang = "en">
             <body className={`${geistSans.variable} ${geistMono.variable} h-full flex flex-col antialiased bg-white`}>
                     <Header />
                     {children}
