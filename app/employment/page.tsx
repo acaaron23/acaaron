@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Employment() {
     return (
-        <div className="w-full h-full min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-black to-gray-800">
+        <div className="w-full h-full p-10 min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-black to-gray-800">
             <div className="w-full max-w-5xl bg-white/5 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
                 <div className="flex flex-col gap-8">
                     <div className="text-center">
