@@ -17,7 +17,7 @@ export default function Employment() {
 
                     <div className="space-y-10">
                         {/* NYCEDC */}
-                        <div className="flex flex-row items-center gap-8">
+                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                             <div className="min-w-[128px] h-[128px] flex items-center justify-center">
                                 <Image
                                     src="/nycedc.png"
@@ -38,7 +38,7 @@ export default function Employment() {
                         </div>
 
                         {/* BU CSC */}
-                        <div className="flex flex-row items-center gap-8">
+                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                             <div className="min-w-[128px] h-[128px] flex items-center justify-center">
                                 <Image
                                     src="/bucsc.png"
@@ -60,7 +60,7 @@ export default function Employment() {
                         </div>
 
                         {/* BU FitRec */}
-                        <div className="flex flex-row items-center gap-8">
+                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                             <div className="min-w-[128px] h-[128px] flex items-center justify-center">
                                 <Image
                                     src="/fitrec.png"
@@ -83,7 +83,7 @@ export default function Employment() {
                         </div>
 
                         {/* NYCHA */}
-                        <div className="flex flex-row items-center gap-8">
+                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                             <div className="min-w-[128px] h-[128px] flex items-center justify-center">
                                 <Image
                                     src="/nycha.png"
@@ -105,7 +105,7 @@ export default function Employment() {
                         </div>
 
                         {/* PYE */}
-                        <div className="flex flex-row items-center gap-8">
+                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                             <div className="min-w-[128px] h-[128px] flex items-center justify-center">
                                 <Image
                                     src="/pye.png"

@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{
     children: React.ReactNode;}>) {
     return (
-        <html lang = "en">
-            <body className={`${geistSans.variable} ${geistMono.variable} h-full flex flex-col antialiased bg-white`}>
-                    <Header />
-                    {children}
-                    <Footer />
-            </body>
+        <html lang="en">
+        <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col antialiased bg-white`}>
+            <Header />
+            <main className="flex-grow w-full">{children}</main>
+            <Footer />
+        </body>
         </html>
     );
 }

@@ -7,9 +7,9 @@ export const metadata = {
 export default function Education(){
     return (
         <>
-            <div className="w-full h-full min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-black to-gray-800">
+            <div className="w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-black to-gray-800 p-6">
                 <div className="w-full max-w-5xl bg-white/5 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
-                    <div className="flex flex-row gap-8 items-center justify-center">
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 ">
                         <Image
                             src="/BU.png"
                             alt="Boston University"
