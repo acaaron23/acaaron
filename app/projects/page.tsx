@@ -51,30 +51,6 @@ export default function Projects(){
                         </p>
                     </div>
 
-                    {/* Number Validator */}
-                    <div>
-                        <h3 className="text-3xl font-semibold">
-                            <a
-                                href="https://numbervalidator-two.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="underline hover:text-red-300 transition"
-                            >
-                                Number Validator
-                            </a>
-                        </h3>
-                        <div className="flex flex-wrap gap-2 mt-2">
-                            {["Next.js", "TailwindCSS", "TypeScript", "API Integration"].map((tech) => (
-                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm font-bold text-black bg-gray-300">
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                        <p className="text-gray-200 text-lg mt-2">
-                            Developed a responsive phone validation website that integrates a third-party API for real-time phone number verification using asynchronous TypeScript logic
-                        </p>
-                    </div>
-
                     {/* URL Shortener */}
                     <div>
                         <h3 className="text-3xl font-semibold">
@@ -96,6 +72,30 @@ export default function Projects(){
                         </div>
                         <p className="text-gray-200 text-lg mt-2">
                             Built a full-stack URL shortener with a clean interface and MongoDB-powered aliasing to allow users to create, customize, and manage unique short links with accurate redirection
+                        </p>
+                    </div>
+
+                    {/* Number Validator */}
+                    <div>
+                        <h3 className="text-3xl font-semibold">
+                            <a
+                                href="https://numbervalidator-two.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline hover:text-red-300 transition"
+                            >
+                                Number Validator
+                            </a>
+                        </h3>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                            {["Next.js", "TailwindCSS", "TypeScript", "API Integration"].map((tech) => (
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm font-bold text-black bg-gray-300">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                        <p className="text-gray-200 text-lg mt-2">
+                            Developed a responsive phone validation website that integrates a third-party API for real-time phone number verification using asynchronous TypeScript logic
                         </p>
                     </div>
 
