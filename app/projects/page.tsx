@@ -71,7 +71,7 @@ export default function Projects(){
                             ))}
                         </div>
                         <p className="text-gray-200 text-lg mt-2">
-                            Developed a responsive phone validation website that integrates a third-party API for real-time phone number verification using asynchronous TypeScript logic.
+                            Developed a responsive phone validation website that integrates a third-party API for real-time phone number verification using asynchronous TypeScript logic
                         </p>
                     </div>
 
@@ -95,7 +95,7 @@ export default function Projects(){
                             ))}
                         </div>
                         <p className="text-gray-200 text-lg mt-2">
-                            Built a full-stack URL shortener with a clean interface and MongoDB-powered aliasing to allow users to create, customize, and manage unique short links with accurate redirection.
+                            Built a full-stack URL shortener with a clean interface and MongoDB-powered aliasing to allow users to create, customize, and manage unique short links with accurate redirection
                         </p>
                     </div>
 
@@ -119,7 +119,7 @@ export default function Projects(){
                             ))}
                         </div>
                         <p className="text-gray-200 text-lg mt-2">
-                            Created an interactive music website celebrating LeBron James, featuring a JSON-based song library, responsive audio playback, and theme switching for a fun and cross-device experience.
+                            Created an interactive music website celebrating LeBron James, featuring a JSON-based song library, responsive audio playback, and theme switching for a fun and cross-device experience
                         </p>
                     </div>
 
@@ -143,7 +143,7 @@ export default function Projects(){
                             ))}
                         </div>
                         <p className="text-gray-200 text-lg mt-2">
-                            Built a restaurant discovery site for NYC that lets users explore curated dining options across all five boroughs with intuitive search and filtering features.
+                            Built a restaurant discovery site for NYC that lets users explore curated dining options across all five boroughs with intuitive search and filtering features
                         </p>
                     </div>
                 </div>

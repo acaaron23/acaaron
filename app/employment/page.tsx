@@ -11,7 +11,7 @@ export default function Employment() {
             <div className="w-full max-w-5xl bg-white/5 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
                 <div className="flex flex-col gap-8">
                     <div className="text-center">
-                        <h2 className="text-5xl font-bold">Employment</h2>
+                        <h2 className="text-center text-5xl font-bold">Employment</h2>
                         <p className="text-2xl font-light mt-2">Work Experience History</p>
                     </div>
 

@@ -8,6 +8,7 @@ export default function Nav() {
             <Link href={`/education`} className={linkStyle}>Education</Link>
             <Link href={'/employment'} className={linkStyle}>Employment</Link>
             <Link href={'/projects'} className={linkStyle}>Projects</Link>
+            <Link href={'/about'} className={linkStyle}>About</Link>
         </nav>
     )
 }
