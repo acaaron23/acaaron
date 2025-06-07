@@ -29,21 +29,36 @@ export default function Education(){
 
                     <div className="mt-8 flex flex-col items-center justify-center">
                         <h3 className="text-2xl font-semibold mb-4">Relevant Coursework</h3>
-                        <ul className="text-xl grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-3 list-disc list-inside text-gray-200">
-                            <li>CS519 - Spark! Software Engineering X-Lab</li>
-                            <li>CS351 - Distributed Systems</li>
-                            <li>CS460 - Introduction to Databases</li>
-                            <li>CS440 - Introduction to AI</li>
-                            <li>CS411 - Software Engineering</li>
-                            <li>CS391 - Web Application Development</li>
-                            <li>CS330 - Analysis of Algorithms</li>
-                            <li>CS237 - Probability in Computing</li>
-                            <li>CS210 - Computer Systems</li>
-                            <li>CS132 - Geometric Algorithms</li>
-                            <li>CS131 - Combinatoric Structures</li>
-                            <li>CS112 - Introduction to Java</li>
-                        </ul>
+                        <div className="flex flex-wrap justify-center gap-3 text-gray-900">
+                            {[
+                                "CS519 - Spark! Software Engineering X-Lab",
+                                "CS351 - Distributed Systems",
+                                "CS460 - Introduction to Databases",
+                                "CS440 - Introduction to AI",
+                                "CS411 - Software Engineering",
+                                "CS391 - Web Application Development",
+                                "CS330 - Analysis of Algorithms",
+                                "CS237 - Probability in Computing",
+                                "CS210 - Computer Systems",
+                                "CS132 - Geometric Algorithms",
+                                "CS131 - Combinatoric Structures",
+                                "CS112 - Introduction to Java",
+                            ].map((course) => (
+                                <span key={course} className="px-4 py-1 border border-white/30 rounded-full text-large font-bold bg-gray-300 text-black">
+                                    {course}
+                                </span>
+                            ))}
+                        </div>
                     </div>
+                    <div className="mt-8 flex flex-col items-center justify-center">
+                        <h3 className="text-2xl font-semibold mb-4">Awards</h3>
+                        <div className="flex flex-wrap justify-center gap-3 text-white-900">
+                            <span className="px-4 py-1 border border-white/30 rounded-full text-large font-bold bg-gray-300 text-black">
+                                    College of Arts and Science Dean&#39;s List Spring 2025
+                            </span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>

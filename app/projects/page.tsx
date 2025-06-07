@@ -15,9 +15,8 @@ export default function Projects(){
                     {/* BobaAddict */}
                     <div>
                         <h3 className="text-3xl font-semibold">BobaAddict</h3>
-                        <ul className="list-disc list-inside mt-2 space-y-1">
-                            <li>Introduced a gamified approach through an engaging and dynamic interface to track boba consumption, transforming indulgent purchases into an insightful and enjoyable financial management tool</li>
-                        </ul>
+                        <p className="text-gray-200 text-lg mt-2">
+                            Introduced a gamified approach through an engaging and dynamic interface to track boba consumption, transforming indulgent purchases into an insightful and enjoyable financial management tool                        </p>
                     </div>
 
                     {/* RotReset */}
@@ -42,7 +41,7 @@ export default function Projects(){
                                 "Firestore",
                                 "Figma"
                             ].map((tech) => (
-                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full font-bold text-sm text-black bg-gray-300">
                                     {tech}
                                 </span>
                             ))}
@@ -66,7 +65,7 @@ export default function Projects(){
                         </h3>
                         <div className="flex flex-wrap gap-2 mt-2">
                             {["Next.js", "TailwindCSS", "TypeScript", "API Integration"].map((tech) => (
-                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm font-bold text-black bg-gray-300">
                                     {tech}
                                 </span>
                             ))}
@@ -90,7 +89,7 @@ export default function Projects(){
                         </h3>
                         <div className="flex flex-wrap gap-2 mt-2">
                             {["Next.js", "TailwindCSS", "TypeScript", "MongoDB", "Material UI"].map((tech) => (
-                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm font-bold text-black bg-gray-300">
                                     {tech}
                                 </span>
                             ))}
@@ -114,7 +113,7 @@ export default function Projects(){
                         </h3>
                         <div className="flex flex-wrap gap-2 mt-2">
                             {["Next.js", "TailwindCSS", "JSON", "Audio Player"].map((tech) => (
-                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm font-bold text-black bg-gray-300">
                                     {tech}
                                 </span>
                             ))}
@@ -138,7 +137,7 @@ export default function Projects(){
                         </h3>
                         <div className="flex flex-wrap gap-2 mt-2">
                             {["HTML", "CSS", "JavaScript"].map((tech) => (
-                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm font-bold text-black bg-gray-300">
                 {tech}
             </span>
                             ))}
