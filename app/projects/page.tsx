@@ -32,10 +32,24 @@ export default function Projects(){
                                 RotReset
                             </a>
                         </h3>
-                        <ul className="list-disc list-inside mt-2 space-y-1">
-                            <li>Designed an application with TailwindCSS, React, Shadcn, TypeScript, Firebase, Firestore, and Figma</li>
-                            <li>Integrated randomized daily task generation with database functionality to provide motivation alternatives, reducing reliance on social media and devices to combat ‘brainrot’</li>
-                        </ul>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                            {[
+                                "React",
+                                "TailwindCSS",
+                                "TypeScript",
+                                "Shadcn",
+                                "Firebase",
+                                "Firestore",
+                                "Figma"
+                            ].map((tech) => (
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                        <p className="list-disc list-inside mt-2 space-y-1">
+                            Integrated randomized daily task generation with database functionality to provide motivation alternatives, reducing reliance on social media and devices to combat ‘brainrot’
+                        </p>
                     </div>
 
                     {/* Number Validator */}
@@ -50,10 +64,16 @@ export default function Projects(){
                                 Number Validator
                             </a>
                         </h3>
-                        <ul className="list-disc list-inside mt-2 space-y-1 text-gray-200 text-lg">
-                            <li>Developed a responsive phone validation website using Next.js, TypeScript, and TailwindCSS</li>
-                            <li>Integrated a third-party API to validate phone numbers in real-time with robust async TypeScript logic</li>
-                        </ul>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                            {["Next.js", "TailwindCSS", "TypeScript", "API Integration"].map((tech) => (
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                        <p className="text-gray-200 text-lg mt-2">
+                            Developed a responsive phone validation website that integrates a third-party API for real-time phone number verification using asynchronous TypeScript logic.
+                        </p>
                     </div>
 
                     {/* URL Shortener */}
@@ -68,10 +88,16 @@ export default function Projects(){
                                 URL Shortener
                             </a>
                         </h3>
-                        <ul className="list-disc list-inside mt-2 space-y-1 text-gray-200 text-lg">
-                            <li>Built a full-stack URL shortener with Next.js, TypeScript, TailwindCSS, MongoDB, and Material UI for generating and managing shareable custom links</li>
-                            <li>Implemented a MongoDB-based aliasing system to ensure uniqueness and prevent link duplication, preserving accurate redirection logic</li>
-                        </ul>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                            {["Next.js", "TailwindCSS", "TypeScript", "MongoDB", "Material UI"].map((tech) => (
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                        <p className="text-gray-200 text-lg mt-2">
+                            Built a full-stack URL shortener with a clean interface and MongoDB-powered aliasing to allow users to create, customize, and manage unique short links with accurate redirection.
+                        </p>
                     </div>
 
                     {/* LeBronify */}
@@ -86,12 +112,17 @@ export default function Projects(){
                                 LeBronify
                             </a>
                         </h3>
-                        <ul className="list-disc list-inside mt-2 space-y-1 text-gray-200 text-lg">
-                            <li>Developed a themed music web app using Next.js and TailwindCSS with a JSON dataset featuring songs dedicated to the GOAT, LeBron James</li>
-                            <li>Implemented a responsive audio player with theme switching and cross-device compatibility for an interactive user experience</li>
-                        </ul>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                            {["Next.js", "TailwindCSS", "JSON", "Audio Player"].map((tech) => (
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                        <p className="text-gray-200 text-lg mt-2">
+                            Created an interactive music website celebrating LeBron James, featuring a JSON-based song library, responsive audio playback, and theme switching for a fun and cross-device experience.
+                        </p>
                     </div>
-
 
                     {/* Knot */}
                     <div>
@@ -105,14 +136,19 @@ export default function Projects(){
                                 knot
                             </a>
                         </h3>
-                        <ul className="list-disc list-inside mt-2 space-y-1">
-                            <li>Designed and developed a dynamic website using HTML, CSS, and JavaScript that connects NYC customers with new restaurants across all five boroughs</li>
-                            <li>Implemented search and filtering features to help users explore curated restaurant lists based on preferences</li>
-                        </ul>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                            {["HTML", "CSS", "JavaScript"].map((tech) => (
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm text-black bg-gray-300">
+                {tech}
+            </span>
+                            ))}
+                        </div>
+                        <p className="text-gray-200 text-lg mt-2">
+                            Built a restaurant discovery site for NYC that lets users explore curated dining options across all five boroughs with intuitive search and filtering features.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
     )
 };
