@@ -5,8 +5,14 @@ const phrases = [
     "a passionate coder",
     "a striving software engineer",
     "a lifelong learner",
-    "a matcha lover",
+    "a coffeshop's worst nightmare",
     "a bug's best friend",
+    "running on caffeine and Stack Overflow",
+    "AI's emotional support human",
+    "refuses to read the documentation (but should)",
+    "powered by matcha and merge conflicts",
+    "I dream in syntax errors",
+    "rubber duck debugging champion",
 ];
 
 function Typewriter() {
@@ -31,12 +37,14 @@ function Typewriter() {
                 setDisplayedText(currentPhrase.slice(0, charIndex));
                 timeout = setTimeout(() => setCharIndex(charIndex - 1), 100);
             } else {
-                const nextIndex = Math.floor(Math.random() * phrases.length);
-                setPhraseIndex(nextIndex);
-                setDeleting(false);
+                timeout = setTimeout(() => {
+                    const nextIndex = Math.floor(Math.random() * phrases.length);
+                    setPhraseIndex(nextIndex);
+                    setDeleting(false);
+                    setCharIndex(0);
+                }, 100);
             }
         }
-
         return () => clearTimeout(timeout);
     }, [charIndex, deleting, phraseIndex]);
 
