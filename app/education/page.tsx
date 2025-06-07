@@ -21,9 +21,6 @@ export default function Education(){
                             <h2 className="text-5xl font-bold">Boston University</h2>
                             <p className="text-white text-2xl font-light">Boston, MA</p>
                             <p className="text-white text-2xl font-light">Bachelor of Arts in Computer Science</p>
-                            <p className="text-white text-2xl font-light">
-                                Anticipated Graduation: May 2026
-                            </p>
                         </div>
                     </div>
 

@@ -20,7 +20,7 @@ export default function About() {
                             height={300}
                             className="rounded-full border-4 border-gray-200 object-cover"
                         />
-                        <h1 className="font-semibold text-xl"> Hey, I&#39;m Aaron, a rising senior at Boston University studying Computer Science! I&#39;m excited to have you here to learn more about me!</h1>
+                        <h1 className="font-semibold text-xl"> Hey, I&#39;m Aaron, a rising senior at Boston University studying Computer Science. I&#39;m excited to have you here to learn more about me!</h1>
                     </div>
 
                     {/* Socials */}
