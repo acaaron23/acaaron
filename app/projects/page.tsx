@@ -15,6 +15,13 @@ export default function Projects(){
                     {/* BobaAddict */}
                     <div>
                         <h3 className="text-3xl font-semibold">BobaAddict</h3>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                            {["Next.js", "TailwindCSS", "TypeScript", "MongoDB", "Google OAuth"].map((tech) => (
+                                <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm font-bold text-black bg-gray-300">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
                         <p className="text-gray-200 text-lg mt-2">
                             Introduced a gamified approach through an engaging and dynamic interface to track boba consumption, transforming indulgent purchases into an insightful and enjoyable financial management tool                        </p>
                     </div>
