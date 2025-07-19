@@ -14,7 +14,16 @@ export default function Projects(){
                 <div className="space-y-10 text-lg text-gray-200">
                     {/* BobaAddict */}
                     <div>
-                        <h3 className="text-3xl font-semibold">BobaAddict</h3>
+                        <h3 className="text-3xl font-semibold">
+                            <a
+                                href="https://bobaaddict.vercel.app//"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline hover:text-red-300 transition"
+                            >
+                                BobaAddict
+                            </a>
+                        </h3>
                         <div className="flex flex-wrap gap-2 mt-2">
                             {["Next.js", "TailwindCSS", "TypeScript", "MongoDB", "Google OAuth"].map((tech) => (
                                 <span key={tech} className="px-3 py-1 border border-white/30 rounded-full text-sm font-bold text-black bg-gray-300">
