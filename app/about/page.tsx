@@ -20,7 +20,7 @@ export default function About() {
                             alt="Aaron Chen Photo"
                             width={300}
                             height={300}
-                            className="rounded-full border-4 border-gray-200 object-cover shrink-0"
+                            className="rounded-full border-4 border-gray-200 object-cover"
                         />
                         <p className="text-xl font-semibold">
                             Hey, I&#39;m Aaron, a rising senior at Boston University studying Computer Science. I&#39;m excited to have you here to learn more about me!
