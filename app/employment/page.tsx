@@ -16,26 +16,23 @@ export default function Employment() {
                     </div>
 
                     <div className="space-y-10">
-                        {/* NYCEDC */}
+                        {/* AdaptX */}
                         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                             <div className="min-w-[128px] h-[128px] flex items-center justify-center">
                                 <Image
-                                    src="/nycedc.png"
-                                    alt="NYCEDC Logo"
+                                    src="/adaptx.png"
+                                    alt="AdaptX Logo"
                                     width={164}
                                     height={164}
                                     className="max-w-full max-h-full object-contain"
                                 />
                             </div>
                             <div className="flex-1">
-                                <h3 className="text-2xl font-semibold">New York City Economic Development Corporation - NYCEDC </h3>
-                                <h4 className="italic text-xl">Management Information Systems – Web Development Intern</h4>
-                                <h4 className="text-lg text-gray-300">July 2025 – Present</h4>
+                                <h3 className="text-2xl font-semibold">AdaptX</h3>
+                                <h4 className="italic text-xl">Software Engineer</h4>
+                                <h4 className="text-lg text-gray-300">September 2025 – Present</h4>
                                 <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
-                                    <li> Drove automation and decision-making efficiency by integrating tools into Power Apps workflows, cutting error
-                                        detection time by 20%, and delivering presentations that increased company-wide tech stack adoption by 30% </li>
-                                    <li>Engineered a Python scripting solution for Power BI that empowered team members to automate complex
-                                        reporting, boosting analytics speed and cutting manual data work by 20%</li>
+                                    <li>Building something for athletes.</li>
                                 </ul>
                             </div>
                         </div>
@@ -83,6 +80,30 @@ export default function Employment() {
                                     <li>Supervise and lead a team of 70+ fitness attendants to maintain a clean, safe, and welcoming environment across all recreational facilities</li>
                                     <li>Facilitate cross-functional communication between facility operations and departmental teams to ensure seamless daily coordination and issue resolution</li>
                                     <li>Provide exceptional customer service by assisting members with equipment usage, addressing inquiries, and enhancing overall guest satisfaction</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* NYCEDC */}
+                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                            <div className="min-w-[128px] h-[128px] flex items-center justify-center">
+                                <Image
+                                    src="/nycedc.png"
+                                    alt="NYCEDC Logo"
+                                    width={164}
+                                    height={164}
+                                    className="max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div className="flex-1">
+                                <h3 className="text-2xl font-semibold">New York City Economic Development Corporation - NYCEDC </h3>
+                                <h4 className="italic text-xl">Management Information Systems – Web Development Intern</h4>
+                                <h4 className="text-lg text-gray-300">July 2025 – August 2025</h4>
+                                <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
+                                    <li> Drove automation and decision-making efficiency by integrating tools into Power Apps workflows, cutting error
+                                        detection time by 20%, and delivering presentations that increased company-wide tech stack adoption by 30% </li>
+                                    <li>Engineered a Python scripting solution for Power BI that empowered team members to automate complex
+                                        reporting, boosting analytics speed and cutting manual data work by 20%</li>
                                 </ul>
                             </div>
                         </div>
