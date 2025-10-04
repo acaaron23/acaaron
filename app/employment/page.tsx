@@ -32,7 +32,10 @@ export default function Employment() {
                                 <h4 className="italic text-xl">Management Information Systems – Web Development Intern</h4>
                                 <h4 className="text-lg text-gray-300">July 2025 – Present</h4>
                                 <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
-                                    <li> Incoming Intern </li>
+                                    <li> Drove automation and decision-making efficiency by integrating tools into Power Apps workflows, cutting error
+                                        detection time by 20%, and delivering presentations that increased company-wide tech stack adoption by 30% </li>
+                                    <li>Engineered a Python scripting solution for Power BI that empowered team members to automate complex
+                                        reporting, boosting analytics speed and cutting manual data work by 20%</li>
                                 </ul>
                             </div>
                         </div>
@@ -53,8 +56,10 @@ export default function Employment() {
                                 <h4 className="italic text-xl">Computer Science Advisor</h4>
                                 <h4 className="text-lg text-gray-300">January 2025 – Present</h4>
                                 <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
-                                    <li>Facilitated 1-on-1 mentorship to navigate academic pathways, select appropriate courses, and explore extracurricular opportunities catered towards 100+ active members </li>
-                                    <li>Enhanced community engagement through weekly workshops and collaborative opportunities through hands-on coding sessions, algorithm challenges, and collaborative project development</li>
+                                    <li>Facilitated 1-on-1 mentorship to navigate academic pathways, select appropriate courses, and explore
+                                        extracurricular opportunities catered towards 100+ active members </li>
+                                    <li>Enhanced community engagement through weekly workshops and collaborative opportunities through hands-on
+                                        coding sessions, algorithm challenges, and collaborative project development</li>
                                 </ul>
                             </div>
                         </div>
