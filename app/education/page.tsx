@@ -28,13 +28,15 @@ export default function Education(){
                         <h3 className="text-2xl font-semibold mb-4">Relevant Coursework</h3>
                         <div className="flex flex-wrap justify-center gap-3 text-gray-900">
                             {[
+                                "CS528 - Cloud Computing",
                                 "CS519 - Spark! Software Engineering X-Lab",
-                                "CS351 - Distributed Systems",
                                 "CS460 - Introduction to Databases",
                                 "CS440 - Introduction to AI",
                                 "CS411 - Software Engineering",
                                 "CS391 - Web Application Development",
+                                "CS351 - Distributed Systems",
                                 "CS330 - Analysis of Algorithms",
+                                "CS320 - Programming Languages",
                                 "CS237 - Probability in Computing",
                                 "CS210 - Computer Systems",
                                 "CS132 - Geometric Algorithms",
