@@ -3,41 +3,41 @@
 import { useState } from "react";
 import Nav from "@/app/components/Nav";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; //
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
-    const [hamburger, setHamburger] = useState(false);
+    const [open, setOpen] = useState(false);
 
     return (
-        <header className="w-full bg-black px-4 py-1">
-            <div className="flex justify-between items-center">
+        <header className="sticky top-0 z-50 w-full bg-bg/80 backdrop-blur-md">
+            <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 md:px-8">
                 <Link
-                    href={`/`}
-                    className="text-white text-2xl font-bold hover:scale-[1.025]"
+                    href="/"
+                    className="text-chrome-shine font-[family-name:var(--font-instrument)] text-2xl tracking-tight transition-opacity hover:opacity-80"
                 >
-                    Aaron&#39;s Portfolio
+                    Aaron
                 </Link>
 
-                {/* Hamburger Icon */}
                 <button
-                    onClick={() => setHamburger(!hamburger)}
-                    className="text-white sm:hidden focus:outline-none"
+                    type="button"
+                    onClick={() => setOpen(!open)}
+                    className="text-chrome sm:hidden focus:outline-none"
+                    aria-label={open ? "Close menu" : "Open menu"}
                 >
-                    {hamburger ? <X size={28} /> : <Menu size={28} />}
+                    {open ? <X size={24} /> : <Menu size={24} />}
                 </button>
 
-                {/* Nav on medium and larger */}
                 <div className="hidden sm:flex">
                     <Nav />
                 </div>
             </div>
 
-            {/* Dropdown Menu on small screens */}
-            {hamburger && (
-                <div className="sm:hidden mt-3 border-t border-white/20 pt-3">
-                    <Nav />
+            {open && (
+                <div className="border-t border-line px-5 py-3 sm:hidden">
+                    <Nav onNavigate={() => setOpen(false)} />
                 </div>
             )}
+            <div className="chrome-divider" aria-hidden />
         </header>
     );
 }

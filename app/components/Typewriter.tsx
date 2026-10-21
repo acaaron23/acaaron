@@ -1,18 +1,17 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 
 const phrases = [
-    "a CS student at Boston University",
-    "a passionate coder",
-    "a striving software engineer",
-    "a lifelong learner",
-    "a coffeshop's worst nightmare",
+    "a CS student from Boston University",
     "a bug's best friend",
-    "running on caffeine and Stack Overflow",
+    "Claude is my best friend",
     "AI's emotional support human",
     "refuses to read the documentation (but should)",
-    "powered by matcha and merge conflicts",
-    "I dream in syntax errors",
+    "loves yerba mate and merge conflicts",
     "rubber duck debugging champion",
+    "has 4 rubber ducks on my desk watching me code",
+    "knicks bandwagoner"
 ];
 
 function Typewriter() {
@@ -49,10 +48,17 @@ function Typewriter() {
     }, [charIndex, deleting, phraseIndex]);
 
     return (
-        <div className="flex justify-center items-center font-mono text-2xl">
-            <p className="animate-blink pr-4 text-green-500"> {'>'} </p>
-            <p>{displayedText}</p>
-            <p className="animate-blink font-xl text-green-500 ml-1">|</p>
+        <div className="flex w-full justify-center overflow-x-auto">
+            <p className="inline-flex max-w-none items-center whitespace-nowrap font-mono text-[1.2rem] leading-none text-fg sm:text-2xl md:text-[1.8rem] lg:text-[2.4rem]">
+                <span className="mr-3 shrink-0 text-chrome select-none" aria-hidden>
+                    {">"}
+                </span>
+                <span>{displayedText}</span>
+                <span
+                    className="animate-blink ml-1.5 inline-block h-[0.85em] w-[0.1em] shrink-0 translate-y-[0.02em] bg-chrome"
+                    aria-hidden
+                />
+            </p>
         </div>
     );
 }

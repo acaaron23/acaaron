@@ -1,9 +1,9 @@
 import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import React from "react";
-import Footer from "@/app/components/Footer";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -15,25 +15,34 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
+const instrumentSerif = Instrument_Serif({
+    variable: "--font-instrument",
+    subsets: ["latin"],
+    weight: "400",
+});
+
 export const metadata: Metadata = {
     title: {
-        default: "Home | Aaron's Portfolio",
-        template: "%s | Aaron's Portfolio",
+        default: "Home | Aaron",
+        template: "%s | Aaron",
     },
-    description: "Aaron's Portfolio",
+    description: "Aaron Chen — CS student at Boston University",
 };
 
-
-
-export default function RootLayout({children,}: Readonly<{
-    children: React.ReactNode;}>) {
+export default function RootLayout({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
     return (
-        <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col antialiased bg-white`}>
-            <Header />
-            <main className="flex-grow w-full">{children}</main>
-            <Footer />
-        </body>
+        <html lang="en" className="h-full">
+            <body
+                className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} flex min-h-full flex-col antialiased bg-bg text-fg font-sans`}
+            >
+                <Header />
+                <main className="flex min-h-0 w-full flex-1 flex-col">{children}</main>
+                <Footer />
+            </body>
         </html>
     );
 }

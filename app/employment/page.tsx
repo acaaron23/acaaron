@@ -1,158 +1,116 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import PageHeader from "@/app/components/PageHeader";
 
 export const metadata: Metadata = {
     title: "Employment",
 };
 
+const roles = [
+    {
+        company: "Travelers Insurance",
+        title: "Software Engineering Intern",
+        dates: "June 2026 – Present",
+        logo: "/travelers.png",
+        alt: "Travelers Logo",
+        bullets: ["manufacturing umbrellas & drinking affogatos"],
+    },
+    {
+        company: "AdaptX",
+        title: "Software Engineering Intern",
+        dates: "September 2025 – December 2025",
+        logo: "/adaptx.png",
+        alt: "AdaptX Logo",
+        bullets: ["building something for athletes."],
+    },
+    {
+        company: "Boston University Computer Science Club",
+        title: "Computer Science Advisor",
+        dates: "January 2025 – May 2026",
+        logo: "/bucsc.png",
+        alt: "Boston University CSC Logo",
+        bullets: ["gave away pokemon cards and legos"],
+    },
+    {
+        company: "Boston University Fitness and Recreational Center",
+        title: "Facility Supervisor & Student Manager",
+        dates: "December 2024 – May 2026",
+        logo: "/fitrec.png",
+        alt: "Boston University FitRec Logo",
+        bullets: ["paid to lift weights and tell people to stop using tripods"],
+    },
+    {
+        company: "New York City Economic Development Corporation — NYCEDC",
+        title: "Management Information Systems – Web Development Intern",
+        dates: "July 2025 – August 2025",
+        logo: "/nycedc.png",
+        alt: "NYCEDC Logo",
+        bullets: ["learned about ferries"],
+    },
+    {
+        company: "New York City Housing Authority — NYCHA",
+        title: "Infrastructure & Operations Intern",
+        dates: "July 2024 – August 2024",
+        logo: "/nycha.png",
+        alt: "NYCHA Logo",
+        bullets: ["bob the builder"],
+    },
+    {
+        company: "PYE Education Center",
+        title: "STEM Project Development Intern",
+        dates: "July 2023 – August 2023",
+        logo: "/pye.png",
+        alt: "PYE Education Logo",
+        bullets: ["taught students about Python and C++"],
+    },
+];
+
 export default function Employment() {
     return (
-        <div className="w-full h-full p-10 min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-black to-gray-800">
-            <div className="w-full max-w-5xl bg-white/5 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
-                <div className="flex flex-col gap-8">
-                    <div className="text-center">
-                        <h2 className="text-center text-5xl font-bold">Employment</h2>
-                        <p className="text-2xl font-light mt-2">Work Experience History</p>
-                    </div>
+        <div className="page-shell">
+            <div className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
+                <PageHeader title="Employment" subtitle="Work experience" />
 
-                    <div className="space-y-10">
-                        {/* AdaptX */}
-                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                            <div className="min-w-[128px] h-[128px] flex items-center justify-center">
+                <ol>
+                    {roles.map((role, i) => (
+                        <li key={role.company}>
+                            {i > 0 && <div className="chrome-divider" aria-hidden />}
+                            <div className="grid gap-5 py-10 md:grid-cols-[7rem_1fr] md:gap-10">
+                            <div className="logo-tile h-20 w-20 p-3 md:h-24 md:w-24">
                                 <Image
-                                    src="/adaptx.png"
-                                    alt="AdaptX Logo"
-                                    width={164}
-                                    height={164}
-                                    className="max-w-full max-h-full object-contain"
+                                    src={role.logo}
+                                    alt={role.alt}
+                                    width={96}
+                                    height={96}
+                                    className="max-h-full max-w-full object-contain"
                                 />
                             </div>
-                            <div className="flex-1">
-                                <h3 className="text-2xl font-semibold">AdaptX</h3>
-                                <h4 className="italic text-xl">Software Engineer</h4>
-                                <h4 className="text-lg text-gray-300">September 2025 – Present</h4>
-                                <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
-                                    <li>Building something for athletes.</li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        {/* BU CSC */}
-                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                            <div className="min-w-[128px] h-[128px] flex items-center justify-center">
-                                <Image
-                                    src="/bucsc.png"
-                                    alt="Boston University CSC Logo"
-                                    width={164}
-                                    height={164}
-                                    className="max-w-full max-h-full object-contain"
-                                />
-                            </div>
-                            <div className="flex-1">
-                                <h3 className="text-2xl font-semibold">Boston University Computer Science Club</h3>
-                                <h4 className="italic text-xl">Computer Science Advisor</h4>
-                                <h4 className="text-lg text-gray-300">January 2025 – Present</h4>
-                                <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
-                                    <li>Facilitated 1-on-1 mentorship to navigate academic pathways, select appropriate courses, and explore
-                                        extracurricular opportunities catered towards 100+ active members </li>
-                                    <li>Enhanced community engagement through weekly workshops and collaborative opportunities through hands-on
-                                        coding sessions, algorithm challenges, and collaborative project development</li>
+                            <div>
+                                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+                                    <h2 className="text-xl font-medium text-fg md:text-2xl">
+                                        {role.company}
+                                    </h2>
+                                    <time className="shrink-0 text-sm text-chrome tabular-nums">
+                                        {role.dates}
+                                    </time>
+                                </div>
+                                <p className="text-chrome-shine mt-1 font-[family-name:var(--font-instrument)] text-lg md:text-xl">
+                                    {role.title}
+                                </p>
+                                <ul className="mt-4 space-y-1.5 text-base text-muted">
+                                    {role.bullets.map((bullet) => (
+                                        <li key={bullet} className="flex gap-2">
+                                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-bright" aria-hidden />
+                                            <span>{bullet}</span>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
-                        </div>
-
-                        {/* BU FitRec */}
-                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                            <div className="min-w-[128px] h-[128px] flex items-center justify-center">
-                                <Image
-                                    src="/fitrec.png"
-                                    alt="Boston University FitRec Logo"
-                                    width={164}
-                                    height={164}
-                                    className="max-w-full max-h-full object-contain"
-                                />
                             </div>
-                            <div className="flex-1">
-                                <h3 className="text-2xl font-semibold">Boston University Fitness and Recreational Center</h3>
-                                <h4 className="italic text-xl">Facility Supervisor & Student Manager</h4>
-                                <h4 className="text-lg text-gray-300">December 2024 – Present</h4>
-                                <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
-                                    <li>Supervise and lead a team of 70+ fitness attendants to maintain a clean, safe, and welcoming environment across all recreational facilities</li>
-                                    <li>Facilitate cross-functional communication between facility operations and departmental teams to ensure seamless daily coordination and issue resolution</li>
-                                    <li>Provide exceptional customer service by assisting members with equipment usage, addressing inquiries, and enhancing overall guest satisfaction</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* NYCEDC */}
-                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                            <div className="min-w-[128px] h-[128px] flex items-center justify-center">
-                                <Image
-                                    src="/nycedc.png"
-                                    alt="NYCEDC Logo"
-                                    width={164}
-                                    height={164}
-                                    className="max-w-full max-h-full object-contain"
-                                />
-                            </div>
-                            <div className="flex-1">
-                                <h3 className="text-2xl font-semibold">New York City Economic Development Corporation - NYCEDC </h3>
-                                <h4 className="italic text-xl">Management Information Systems – Web Development Intern</h4>
-                                <h4 className="text-lg text-gray-300">July 2025 – August 2025</h4>
-                                <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
-                                    <li> Drove automation and decision-making efficiency by integrating tools into Power Apps workflows, cutting error
-                                        detection time by 20%, and delivering presentations that increased company-wide tech stack adoption by 30% </li>
-                                    <li>Engineered a Python scripting solution for Power BI that empowered team members to automate complex
-                                        reporting, boosting analytics speed and cutting manual data work by 20%</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* NYCHA */}
-                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                            <div className="min-w-[128px] h-[128px] flex items-center justify-center">
-                                <Image
-                                    src="/nycha.png"
-                                    alt="NYCHA Logo"
-                                    width={164}
-                                    height={164}
-                                    className="max-w-full max-h-full object-contain"
-                                />
-                            </div>
-                            <div className="flex-1">
-                                <h3 className="text-2xl font-semibold">New York City Housing Authority – NYCHA</h3>
-                                <h4 className="italic text-xl">Infrastructure & Operations Intern</h4>
-                                <h4 className="text-lg text-gray-300">July 2024 – August 2024</h4>
-                                <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
-                                    <li>Documented configuration and deployment of 500+ network devices using industry-standard protocols to enhance network reliability and communication for operational continuity</li>
-                                    <li>Leveraged ServiceNow, ActiveCampaign, and Siebel to tackle technical efficiency and resolution time</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* PYE */}
-                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                            <div className="min-w-[128px] h-[128px] flex items-center justify-center">
-                                <Image
-                                    src="/pye.png"
-                                    alt="PYE Education Logo"
-                                    width={164}
-                                    height={164}
-                                    className="max-w-full max-h-full object-contain"
-                                />
-                            </div>
-                            <div className="flex-1">
-                                <h3 className="text-2xl font-semibold">PYE Education Center</h3>
-                                <h4 className="italic text-xl">STEM Project Development Intern</h4>
-                                <h4 className="text-lg text-gray-300">July 2023 – August 2023</h4>
-                                <ul className="list-disc list-inside mt-2 text-gray-200 text-lg space-y-1">
-                                    <li>Designed and implemented coding-centric projects leveraging expertise in Python and C++ to simplify programming concepts for 100+ aspiring coders and integrated feedback from stakeholders for iterations</li>
-                                    <li>Collaborated with educators to ensure the creation of diverse, engaging, and academically enriching projects</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        </li>
+                    ))}
+                </ol>
             </div>
         </div>
     );
